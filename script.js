@@ -28,7 +28,7 @@ scrollToTopButton.onclick = function() {
 
 // Initialize Leaflet map
 function initMap() {
-    const eventLocation = [33.621944, -111.975833]; // Lat/long for 4966 E. Fellars Dr, Scottsdale, AZ
+    const eventLocation = [47.616940, -122.321518]; // Lat/long for 4966 E. Fellars Dr, Scottsdale, AZ
     const map = L.map('map').setView(eventLocation, 14); // Set zoom to 14
 
     // Add OpenStreetMap tiles
@@ -38,7 +38,7 @@ function initMap() {
 
     // Add marker
     L.marker(eventLocation).addTo(map)
-        .bindPopup('4966 E. Fellars Dr, Scottsdale, AZ')
+        .bindPopup('Seattle Central College (The Atrium)')
         .openPopup();
 
     // Invalidate map size after a delay to ensure it's rendered properly on mobile
@@ -49,7 +49,7 @@ function initMap() {
 
 // Countdown Timer Functionality
 function startCountdown() {
-    const eventDate = new Date('November 28, 2024 09:00:00').getTime();
+    const eventDate = new Date('November 26, 2024 11:00:00').getTime();
     const countdownElement = document.getElementById('countdown');
 
     const countdownTimer = setInterval(() => {
