@@ -97,7 +97,7 @@ function handleRSVP(event) {
     const email = event.target[1].value; // Get the email value
 
     // You can show a confirmation alert here
-    alert(`Thank you, ${name}! Your RSVP has been received, and we look forward to seeing you! Please click "ok", wait for the page to reload, and select "I'm not a robot".`);
+    alert(`Thank you, ${name}! Your RSVP has been received, and we look forward to seeing you!\n\nPlease click "OK", wait for the page to reload, and select "I'm not a robot".`);
 
     // Allow the form to submit normally
     // No need to call event.preventDefault() since we want the form to be submitted
